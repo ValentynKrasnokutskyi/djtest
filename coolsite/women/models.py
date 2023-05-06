@@ -8,3 +8,6 @@ class Women(models.Model):
     time_creat = models.DateTimeField(auto_now_add=True)
     time_update = models.DateTimeField(auto_now=True)
     if_published = models.BooleanField(default=True)
+
+    def __str__(self):
+        return self.title
