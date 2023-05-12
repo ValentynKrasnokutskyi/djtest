@@ -16,5 +16,6 @@ class CategoryAdmin(admin.ModelAdmin):
     list_display_links = ('id', 'name')
     search_fields = ('name',)
 
+
 admin.site.register(Women, WomenAdmin)
 admin.site.register(Category, CategoryAdmin)
